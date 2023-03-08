@@ -1,11 +1,7 @@
-﻿Console.Write("Введите 2 разных числа:");
-int A = Convert.ToInt32(Console.ReadLine());
-int B = Convert.ToInt32(Console.ReadLine());
-if (A > B)
+﻿Console.Write("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+for (int x = 1;x<=N;x++)
 {
-    Console.WriteLine("Больше число: " + A);
-}
-else
-{
-    Console.WriteLine("Больше число: " + B);
+    if (x%2==0)
+    Console.Write($"{x} ");
 }
