@@ -1,11 +1,10 @@
-﻿Console.Write("Введите 2 разных числа:");
+﻿Console.Write("Введите число: ");
 int A = Convert.ToInt32(Console.ReadLine());
-int B = Convert.ToInt32(Console.ReadLine());
-if (A > B)
+if (A%2==0)
 {
-    Console.WriteLine("Больше число: " + A);
+    Console.WriteLine("Число четное");
 }
 else
 {
-    Console.WriteLine("Больше число: " + B);
+    Console.WriteLine("Число нечетное");
 }
