@@ -1,11 +1,19 @@
-﻿Console.Write("Введите 2 разных числа:");
+﻿Console.Write("Введите 3 разных числа: ");
 int A = Convert.ToInt32(Console.ReadLine());
 int B = Convert.ToInt32(Console.ReadLine());
-if (A > B)
+int C = Convert.ToInt32(Console.ReadLine());
+if (A>B & A>C)
 {
-    Console.WriteLine("Больше число: " + A);
+    Console.WriteLine("Большее число это: " + A);
 }
 else
 {
-    Console.WriteLine("Больше число: " + B);
+    if (B>A & B>C)
+    {
+        Console.WriteLine("Большее число это: " + B);
+    }
+    else
+    {
+        Console.WriteLine("Большее число это: " + C);
+    }
 }
